@@ -1,0 +1,113 @@
+@import "mixin";
+
+// variables
+
+$bColor: red;
+$btnColor: green;
+$fontColor: #8a8888;
+$layoutWidth: 1114px;
+$borderColor: #f3eded;
+$whiteColor: #ffff;
+
+// variables
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+// utility classes
+
+.font_14_400 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.font_18_400 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+// utility classes
+
+header {
+  border-bottom: 1px solid $borderColor;
+
+  .navContainer {
+    max-width: $layoutWidth;
+    margin-inline: auto;
+    @include flex(center, space-between);
+    padding-block: 15px;
+
+    .info {
+      @include flex(center);
+      gap: 40px;
+    }
+
+    .contect {
+      @include flex(center);
+      gap: 20px;
+    }
+    .email {
+      @include flex(center);
+      gap: 20px;
+    }
+    button {
+      width: 129px;
+      height: 41px;
+      border-radius: 6px;
+      border: 2px $btnColor solid;
+      background-color: $btnColor;
+      color: white;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+nav {
+  max-width: $layoutWidth;
+  margin-inline: auto;
+  ul {
+    @include flex(center, space-between);
+    padding-block: 14px;
+    color: $fontColor;
+    li {
+      list-style: none;
+      .nav-link {
+        color: $fontColor;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+#home {
+  position: relative;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .home-content {
+    width: 947px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $whiteColor;
+    h1 {
+      font-size: 64px;
+      font-weight: 700;
+      text-align: center;
+    }
+    p {
+      font-size: 24px;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+}

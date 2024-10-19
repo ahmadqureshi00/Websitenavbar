@@ -1,0 +1,26 @@
+@mixin flex($align: center, $justify: center) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin flex-container(
+  $justify: flex-start,
+  $align: stretch,
+  $direction: row,
+  $wrap: nowrap
+) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin btnPrimary() {
+  width: 129px;
+  height: 41px;
+  border-radius: 6px;
+  background-color: $btnColor;
+  color: white;
+}
