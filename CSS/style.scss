@@ -3,11 +3,12 @@
 // variables
 
 $bColor: red;
-$btnColor: green;
+$btnColor: #86be3f;
 $fontColor: #8a8888;
 $layoutWidth: 1114px;
 $borderColor: #f3eded;
 $whiteColor: #ffff;
+$cardsColor: #f8f8f8;
 
 // variables
 
@@ -19,18 +20,27 @@ $whiteColor: #ffff;
   font-style: normal;
 }
 
-// utility classes
+// utility classes start
 
 .font_14_400 {
   font-size: 14px;
+  font-weight: 400;
+}
+.font_17_400 {
+  font-size: 17px;
   font-weight: 400;
 }
 .font_18_400 {
   font-size: 18px;
   font-weight: 400;
 }
+.section_heading_font {
+  font-size: 36px;
+  font-weight: 600;
+  color: #363636;
+}
 
-// utility classes
+// utility classes end
 
 header {
   border-bottom: 1px solid $borderColor;
@@ -108,6 +118,68 @@ nav {
       font-size: 24px;
       font-weight: 500;
       text-align: center;
+    }
+  }
+}
+
+#members {
+  max-width: 1110px;
+  margin-inline: auto;
+  margin-top: 80px;
+  position: relative;
+  .mContainer {
+    // background-color: red;
+    .name {
+      text-align: center;
+
+      h1 {
+        margin-bottom: 30px;
+      }
+      .name-u-line {
+        max-width: 80px;
+        height: 5px;
+        border-radius: 20px;
+        background-color: $btnColor;
+        margin-inline: auto;
+      }
+    }
+    p {
+      text-align: center;
+      margin-top: 26px;
+      color: #363636;
+    }
+    .decorativImg {
+      position: absolute;
+      top: 0;
+      left: -80px;
+    }
+  }
+  .mInfo {
+    @include flex(center, space-between);
+    gap: 31px;
+    margin-top: 133px;
+    .card {
+      background-color: $cardsColor;
+      padding-inline: 15px;
+      border-radius: 6px;
+      padding-top: 98px;
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+      }
+      h1 {
+        font-size: 20px;
+        font-weight: 500;
+        color: #363636;
+        text-align: center;
+      }
+      p {
+        margin-top: 9.32px;
+      }
     }
   }
 }
