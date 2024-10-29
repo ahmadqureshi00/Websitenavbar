@@ -181,4 +181,35 @@ nav {
       }
     }
   }
+  #quote {
+    // background-color: red;
+    padding-inline: 167px;
+    .quote-text {
+      @include flex();
+      p {
+        font-size: 21px;
+        font-weight: 500;
+        font-style: italic;
+        text-align: center;
+        // background-color: green;
+      }
+      span {
+        font-size: 80px;
+        font-family: "Playfair Display", serif;
+        // background-color: blue;
+        align-items: start;
+        color: #9a9a9a;
+      }
+      .rotate-span {
+        rotate: -180deg;
+      }
+    }
+    .end-name {
+      color: $btnColor;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 30px;
+    }
+  }
 }

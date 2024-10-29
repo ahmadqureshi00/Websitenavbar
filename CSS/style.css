@@ -173,4 +173,34 @@ nav ul li .nav-link {
 }
 #members .mInfo .card p {
   margin-top: 9.32px;
+}
+#members #quote {
+  padding-inline: 167px;
+}
+#members #quote .quote-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#members #quote .quote-text p {
+  font-size: 21px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+}
+#members #quote .quote-text span {
+  font-size: 80px;
+  font-family: "Playfair Display", serif;
+  align-items: start;
+  color: #9a9a9a;
+}
+#members #quote .quote-text .rotate-span {
+  rotate: -180deg;
+}
+#members #quote .end-name {
+  color: #86be3f;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 30px;
 }/*# sourceMappingURL=style.css.map */
