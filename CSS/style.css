@@ -174,33 +174,104 @@ nav ul li .nav-link {
 #members .mInfo .card p {
   margin-top: 9.32px;
 }
-#members #quote {
+#members .quote {
   padding-inline: 167px;
 }
-#members #quote .quote-text {
+#members .quote .quote-text {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#members #quote .quote-text p {
+#members .quote .quote-text p {
   font-size: 21px;
   font-weight: 500;
   font-style: italic;
   text-align: center;
 }
-#members #quote .quote-text span {
+#members .quote .quote-text span {
   font-size: 80px;
   font-family: "Playfair Display", serif;
   align-items: start;
   color: #9a9a9a;
 }
-#members #quote .quote-text .rotate-span {
+#members .quote .quote-text .rotate-span {
   rotate: -180deg;
 }
-#members #quote .end-name {
+#members .quote .end-name {
   color: #86be3f;
   text-align: center;
   font-size: 18px;
   font-weight: 500;
   margin-top: 30px;
+}
+
+#sire {
+  max-width: 1110px;
+  height: auto;
+  margin-inline: auto;
+  padding: 116px 0px 111px 0px;
+}
+#sire .sire-container {
+  position: relative;
+  padding: 88px 0px 180px;
+}
+#sire .sire-container .sire-decorativImg-0ne {
+  position: absolute;
+  top: -19px;
+}
+#sire .sire-container .sire-decorativImg-two {
+  position: absolute;
+  top: 0;
+  right: 140px;
+}
+#sire .sire-container .sire-decorativImg-three {
+  position: absolute;
+  bottom: 0;
+  left: 430px;
+}
+#sire .sire-container .sire-decorativImg-four {
+  position: absolute;
+  top: 19px;
+  left: 30px;
+  height: 400px;
+  width: 400px;
+}
+#sire .sire-container .sire-decorativImg-five {
+  position: absolute;
+  top: 85px;
+  right: 50px;
+  height: 130px;
+  width: 130px;
+}
+#sire .sire-container .sLite-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#sire .sire-container .solar-img {
+  position: absolute;
+  bottom: 0;
+  left: 161px;
+  z-index: 2;
+}
+#sire .sire-text {
+  margin-left: 480px;
+}
+#sire .sire-text .text-heading {
+  margin-bottom: 12px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #86be3f;
+}
+#sire .sire-text .text-head {
+  margin-bottom: 12px;
+  font-size: 34px;
+  font-weight: 600;
+}
+#sire .sire-text .uLine {
+  width: 90px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #86be3f;
+  margin-bottom: 12px;
 }/*# sourceMappingURL=style.css.map */

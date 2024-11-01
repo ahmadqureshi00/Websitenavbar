@@ -9,7 +9,6 @@ $layoutWidth: 1114px;
 $borderColor: #f3eded;
 $whiteColor: #ffff;
 $cardsColor: #f8f8f8;
-
 // variables
 
 * {
@@ -181,7 +180,7 @@ nav {
       }
     }
   }
-  #quote {
+  .quote {
     padding-inline: 167px;
     .quote-text {
       @include flex();
@@ -207,6 +206,79 @@ nav {
       font-size: 18px;
       font-weight: 500;
       margin-top: 30px;
+    }
+  }
+}
+#sire {
+  max-width: 1110px;
+  height: auto;
+  margin-inline: auto;
+  padding: 116px 0px 111px 0px;
+  .sire-container {
+    position: relative;
+    padding: 88px 0px 180px;
+
+    .sire-decorativImg-0ne {
+      position: absolute;
+      top: -19px;
+    }
+    .sire-decorativImg-two {
+      position: absolute;
+      top: 0;
+      right: 140px;
+    }
+    .sire-decorativImg-three {
+      position: absolute;
+      bottom: 0;
+      left: 430px;
+    }
+    .sire-decorativImg-four {
+      position: absolute;
+      top: 19px;
+      left: 30px;
+      height: 400px;
+      width: 400px;
+    }
+    .sire-decorativImg-five {
+      position: absolute;
+      top: 85px;
+      right: 50px;
+      height: 130px;
+      width: 130px;
+    }
+
+    .sLite-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .solar-img {
+      position: absolute;
+      bottom: 0;
+      left: 161px;
+      z-index: 2;
+    }
+  }
+  .sire-text {
+    // background-color: blue;
+    margin-left: 480px;
+    .text-heading {
+      margin-bottom: 12px;
+      font-size: 30px;
+      font-weight: 500;
+      color: $btnColor;
+    }
+    .text-head {
+      margin-bottom: 12px;
+      font-size: 34px;
+      font-weight: 600;
+    }
+    .uLine {
+      width: 90px;
+      height: 5px;
+      border-radius: 20px;
+      background-color: $btnColor;
+      margin-bottom: 12px;
     }
   }
 }
