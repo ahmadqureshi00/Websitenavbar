@@ -38,6 +38,11 @@ $cardsColor: #f8f8f8;
   font-weight: 600;
   color: #363636;
 }
+.flex_b_cir_c_boxes {
+  @include flex();
+  margin-bottom: 39px;
+  gap: 13px;
+}
 
 // utility classes end
 
@@ -260,7 +265,6 @@ nav {
     }
   }
   .sire-text {
-    // background-color: blue;
     margin-left: 480px;
     .text-heading {
       margin-bottom: 12px;
@@ -279,6 +283,46 @@ nav {
       border-radius: 20px;
       background-color: $btnColor;
       margin-bottom: 12px;
+    }
+  }
+}
+#cir {
+  max-width: 1110px;
+  position: relative;
+  margin-inline: auto;
+  .sec-bg-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cir-container {
+    .cir-head {
+      .cir-h1 {
+        text-align: center;
+      }
+      .cir-u-line {
+        max-width: 200px;
+        height: 5px;
+        border-radius: 20px;
+        background-color: $btnColor;
+        margin-inline: auto;
+        margin-top: 30px;
+      }
+    }
+    .cir-body {
+      @include flex();
+      gap: 83px;
+      margin-top: 76px;
+      h1 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 400;
+      }
     }
   }
 }

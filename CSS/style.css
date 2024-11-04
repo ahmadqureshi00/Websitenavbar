@@ -27,6 +27,14 @@
   color: #363636;
 }
 
+.flex_b_cir_c_boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 39px;
+  gap: 13px;
+}
+
 header {
   border-bottom: 1px solid #f3eded;
 }
@@ -274,4 +282,43 @@ nav ul li .nav-link {
   border-radius: 20px;
   background-color: #86be3f;
   margin-bottom: 12px;
+}
+
+#cir {
+  max-width: 1110px;
+  position: relative;
+  margin-inline: auto;
+}
+#cir .sec-bg-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#cir .cir-container .cir-head .cir-h1 {
+  text-align: center;
+}
+#cir .cir-container .cir-head .cir-u-line {
+  max-width: 200px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #86be3f;
+  margin-inline: auto;
+  margin-top: 30px;
+}
+#cir .cir-container .cir-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 83px;
+  margin-top: 76px;
+}
+#cir .cir-container .cir-body h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#cir .cir-container .cir-body p {
+  font-size: 18px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
